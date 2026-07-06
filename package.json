@@ -13,14 +13,14 @@
     "PMurHash128",
     "hash"
   ],
-  "version": "3.5.1",
+  "version": "4.0.0",
   "license": "MIT",
-  "author": "Rafał Michalski <royal@yeondir.com>",
+  "author": "Nicholas Wold <nwold@hex.tech>",
   "contributors": [],
-  "homepage": "http://github.com/royaltm/node-murmurhash-native",
+  "homepage": "http://github.com/nicholaswold/node-murmurhash-native",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/royaltm/node-murmurhash-native.git"
+    "url": "git+https://github.com/nicholaswold/node-murmurhash-native.git"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build",
@@ -35,7 +35,7 @@
   "binary": {
     "module_name": "murmurhash",
     "module_path": "./lib/{configuration}/",
-    "host": "https://github.com/royaltm/node-murmurhash-native/releases/download/",
+    "host": "https://github.com/nicholaswold/node-murmurhash-native/releases/download/",
     "remote_path": "v{version}"
   },
   "main": "index.js",
@@ -49,7 +49,7 @@
     "statements": 95
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=26"
   },
   "dependencies": {
     "@mapbox/node-pre-gyp": "^2.0.0",

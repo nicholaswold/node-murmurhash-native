@@ -606,13 +606,13 @@ namespace MurmurHash {
     i_t->SetInternalFieldCount(1);
 
     Nan::SetAccessor( i_t, Nan::New<String>("isBusy").ToLocalChecked(),
-                          GetIsBusy, NULL, Local<Value>(), v8::DEFAULT,
+                          GetIsBusy, NULL, Local<Value>(), Nan::DEFAULT,
                           static_cast<PropertyAttribute>(DontEnum | DontDelete));
     Nan::SetAccessor( i_t, Nan::New<String>("total").ToLocalChecked(),
-                          GetTotal, NULL, Local<Value>(), v8::DEFAULT,
+                          GetTotal, NULL, Local<Value>(), Nan::DEFAULT,
                           static_cast<PropertyAttribute>(DontDelete));
     Nan::SetAccessor( i_t, Nan::New<String>("endianness").ToLocalChecked(),
-                          GetEndianness, SetEndianness, Local<Value>(), v8::DEFAULT,
+                          GetEndianness, SetEndianness, Local<Value>(), Nan::DEFAULT,
                           static_cast<PropertyAttribute>(DontDelete));
    
     Nan::SetTemplate(tpl, Nan::New<String>("SERIAL_BYTE_LENGTH").ToLocalChecked(),
